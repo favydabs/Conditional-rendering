@@ -3,7 +3,7 @@ import React from "react";
 var isLoggedIn = true;
 function renderConditionally() {
   if (isLoggedIn === true) {
-    return <h1>Hello</h1>
+    return <h1>Hello</h1>;
 
   } else {
     return (
@@ -17,8 +17,9 @@ function renderConditionally() {
 
 }
 function App() {
-  <div className="container" />
-  { renderConditionally() }
+  return <div className="container">
+    {renderConditionally()}
+  </div>;
 }
 
 export default App;
